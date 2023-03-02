@@ -5,11 +5,13 @@ import (
 	"testing"
 
 	"github.com/jarkata/kommon/kate"
+	"github.com/jarkata/kommon/logger"
 )
 
 func TestParseDate(t *testing.T) {
 	dates := kate.ParseIsoDateTime("2023-01-01 10:10:10")
-	fmt.Println(dates)
+
+	logger.Info(dates)
 }
 
 func TestParseIsoDateTime2(t *testing.T) {
