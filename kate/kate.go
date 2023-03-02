@@ -1,4 +1,4 @@
-package date
+package kate
 
 import (
 	"time"
