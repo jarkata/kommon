@@ -62,6 +62,11 @@ func FormatBasicDate(date time.Time) string {
 	return date.Format(BasicDateStyle)
 }
 
+/** 格式化日期 **/
+func FormatDate(date time.Time, layout string) string {
+	return date.Format(layout)
+}
+
 /*
 *
 return date style: yyyy-MM-dd HH:mm:ss
